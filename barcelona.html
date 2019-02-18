@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/barcelona/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Barcelona</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>A mi parecer Barcelona es una de la ciudades más interesantes que he visitado, comparándola
+con otras ciudades en las que he estado previamente, considerada como la segunda capital de
+España posee una esencia cosmopolita que solo se dan en unas pocas ciudades españolas,
+quien decida viajar a Barcelona va a sorprenderse de la cultura, la comida y las diferentes
+formas de ocio en esta gran ciudad; por lo que desde mi punto de vista es 100%
+recomendable.</p>
+                <iframe src="https://www.youtube.com/embed/Vt9gB-PGxmM" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/barcelona/parque.jpg" alt="">
+                        <div class="data2">
+                            <h2>Parque de Montjuic</h2>
+                            <p>La Fuente Mágica de  Montjuic  es uno de los mejores espectáculos
+de Barcelona. Su construcción fue una de las mayores innovaciones para la Exposición
+Internacional de 1929, un evento que transformó Barcelona.
+Es una actividad para toda la familia que además, es gratuita</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/barcelona/sagrada%20familia.jpg" alt="">
+                        <div class="data2">
+                            <h2>Sagrada Familia</h2>
+                            <p>Para obra maestra de Gaudí no hay palabras para describir la sensación de ver
+la Basílica de la Sagrada Familia por primera vez, un edifico único en el mundo, contribución de
+uno de los genios que ayudaron a dar forma a Barcelona. En la actualidad, es uno de los
+monumentos más fascinantes, no sólo en Barcelona sino en todo el mundo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/barcelona/barceloneta.jpg" alt="">
+                        <div class="data2">
+                            <h2>Barceloneta</h2>
+                            <p>La Barceloneta es uno de los barrios más populares de Barcelona. Este antiguo
+barrio de pescadores, forma una entidad inseparable con la playa del mismo nombre y es
+sinónimo de mucho encanto, buena gastronomía y un ambiente muy animado. El paseo
+
+marítimo está lleno de gente y es un lugar perfecto para quedar, tomarse algo, montar
+bicicleta, correr o poner los pies en la arena.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<p>Si quieres informacion acerca de hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=303946&amp;label=barcelona-n5d3zCsb5ZSVdHTznHxregS247131522234%3Apl%3Ata%3Ap12300%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-285284109726%3Akwd-1586696783%3Alp9049140%3Ali%3Adec%3Adm&amp;sid=a6a7c0fdf1419729c5dc46ed1e1fd5f8&amp;sb=1&amp;src=city&amp;src_elem=sb&amp;error_url=https%3A%2F%2Fwww.booking.com%2Fcity%2Fes%2Fbarcelona.es.html%3Faid%3D303946%3Blabel%3Dbarcelona-n5d3zCsb5ZSVdHTznHxregS247131522234%253Apl%253Ata%253Ap12300%253Ap2%253Aac%253Aap1t1%253Aneg%253Afi%253Atiaud-285284109726%253Akwd-1586696783%253Alp9049140%253Ali%253Adec%253Adm%3Bsid%3Da6a7c0fdf1419729c5dc46ed1e1fd5f8%3Binac%3D0%26%3B&amp;ss=Barcelona&amp;ssne=Barcelona&amp;ssne_untouched=Barcelona&amp;city=-372490&amp;checkin_monthday=&amp;checkin_month=&amp;checkin_year=&amp;checkout_monthday=&amp;checkout_month=&amp;checkout_year=&amp;no_rooms=1&amp;group_adults=2&amp;group_children=0&amp;b_h4u_keep_filters">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>

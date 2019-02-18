@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/turin/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Turín</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Turín (en italiano: Torino) es una ciudad, importante centro cultural y de
+negocios del norte de Italia, capital de la región de Piamonte, localizada principalmente en el
+margen izquierdo del río Po y rodeada por los Alpes. El área metropolitana de Turín, según la
+Organización para la Cooperación y el Desarrollo Económico, tiene una población de alrededor
+de 2.200.000 habitantes.
+La ciudad es rica en cultura e historia. Es conocida por sus numerosos museos de arte, sus
+restaurantes, sus iglesias, sus palacios, sus teatros de ópera, sus plazas, sus parques, sus
+jardines y sus bibliotecas, entre otros atractivos. Turín es ampliamente reconocida por su
+arquitectura barroca , neoclásica y Art Nouveau. Muchas de las plazas públicas de la ciudad, de
+los castillos, jardines y elegantes palacios (como el Palazzo Madama), fueron construidos por el
+arquitecto siciliano Filippo Juvarra, quien diseñó estos edificios en el estilo barroco y clásico del
+Palacio de Versalles, en Francia.</p>
+                <iframe src="" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/turin/museo.jpg" alt="">
+                        <div class="data2">
+                            <h2>Museo egipcio</h2>
+                            <p>El museo Egipcio de Turín (Torino) en Italia, por la importancia de los objetos que
+contiene es considerado el Museo Egipcio más importante después del Museo Egipcio
+del Cairo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/turin/catedral.jpg" alt="">
+                        <div class="data2">
+                            <h2>Catedral</h2>
+                            <p>La Catedral de Turín o también llamada Catedral Metropolitana de San Juan Bautista,
+por estar dedicada a él, representa la más importante iglesia católica de la ciudad.
+
+Tiene entre su principal artículo histórico, el Santo Sudario con el que se dice el mismo
+Jesú fue envuelto al ser descendido de la cruz.
+
+El manto segrado, se encuentra dentro de la Capilla de la Sábana Santa, construía por
+encargo del sacerdote Guarino Guarini entre los años 1491-1498 aproximadamente. La
+catedral posee un estilo renacentista, teniendo en la fachada acabados en mármol
+blanco y dentro de su estructura contempla tres naves, una cúpula octogonal así como
+diversas capillas anexas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/turin/mole.jpg" alt="">
+                        <div class="data2">
+                            <h2>Mole Antonelliana</h2>
+                            <p>La Mole Antonelliana es un edificio monumental de Turín situado en el centro
+histórico, símbolo de la ciudad y uno de los símbolos de Italia. Su nombre procede del
+hecho de que, en el pasado, fue la construcción en albañilería más alta de Europa,
+mientras que su adjetivo procede del arquitecto que la diseñó, Alessandro Antonelli.
+Sin embargo, durante el siglo XX, sufrió importante remodelaciones usando hormigón
+armado y vigas de acero, por lo cual actualmente no se puede considerar una
+estructura exclusivamente en albañilería.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<p>Si quieres informacion acerca de hoteles pulsa <a href="https://www.trivago.es/?sQuery=turin">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>

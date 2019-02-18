@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/lyon/fondo.jpg" alt="">
+                <div class="data">
+                    <h1 style="color: #fff;">Lyon</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Es una ciudad del centro-este de Francia, capital de la Metrópoli de Lyon, del departamento del Ródano y de la región de Auvernia-Ródano-Alpes. Con 513 275 habitantes en 2015 es la tercera más poblada del país, por detrás de París y Marsella.</p>
+                <iframe src="https://www.youtube.com/embed/SWmm1l073kI" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/lyon/vieux lyon.png" alt="">
+                        <div class="data2">
+                            <h2>Vieux Lyon</h2>
+                            <p>El Vieux Lyon es el barrio medieval y renacentista de Lyon. Se encuentra en la ribera
+del Saona, a los pies de la colina Fourvière. Éste es uno de los barrios más extensos
+del período medieval y renacentista, que sigue intacto hoy en día.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/lyon/catedral.jpg" alt="">
+                        <div class="data2">
+                            <h2>Catedral de Lyon</h2>
+                            <p>La catedral de San Juan Bautista de Lyon, a menudo llamada simplemente catedral de
+Lyon o primacial de San Juan ​ es la catedral y primado de Lyon. El término primado
+viene de Primat des Gaules, título histórico del obispo de Lyon. Construida entre 1180
+y 1480, mezcla el estilo Románico con el Gótico.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/lyon/plaza.jpg" alt="">
+                        <div class="data2">
+                            <h2>Plaza de Bellecour</h2>
+                            <p>La Plaza Bellecour, todo un emblema de Lyon, es la plaza peatonal más
+grande de Europa con sus 62.000 metros cuadrados. Es, además, el
+&quot;kilómetro cero&quot; de la ciudad y de ella parten varias de las calles
+comerciales más famosas: Rue de la République, Rue Victor Hugo y Rue du
+Président Édouard Herriot.
+En la Plaza pueden verse dos estatuas: una ecuestre de Luis XIV, en cuya
+base hay una alegoría del Ródano, en el centro y en un extremo otra de
+Antoine de Saint-Exupéry, autor de &quot;El Principito&quot;, que nació en Lyon.
+Durante el invierno se instala en la Plaza una noria de unos 60 metros de
+altura, desde cuyo punto más alto se tienen unas fantásticas vistas de la
+ciudad.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<p>Si quieres informacion acerca de hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=303946&amp;label=Lyon-wY57Cu5jIkVgCfQHennmlQS255686811496%3Apl%3Ata%3Ap1460%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-2453341283%3Alp9049140%3Ali%3Adec%3Adm&amp;sid=a6a7c0fdf1419729c5dc46ed1e1fd5f8&amp;sb=1&amp;src=city&amp;src_elem=sb&amp;error_url=https%3A%2F%2Fwww.booking.com%2Fcity%2Ffr%2FLyon.es.html%3Faid%3D303946%3Blabel%3DLyon-wY57Cu5jIkVgCfQHennmlQS255686811496%253Apl%253Ata%253Ap1460%253Ap2%253Aac%253Aap1t1%253Aneg%253Afi%253Atikwd-2453341283%253Alp9049140%253Ali%253Adec%253Adm%3Bsid%3Da6a7c0fdf1419729c5dc46ed1e1fd5f8%3Binac%3D0%26%3B&amp;ss=Lyon&amp;is_ski_area=0&amp;ssne=Lyon&amp;ssne_untouched=Lyon&amp;city=-1448468&amp;checkin_monthday=&amp;checkin_month=&amp;checkin_year=&amp;checkout_monthday=&amp;checkout_month=&amp;checkout_year=&amp;no_rooms=1&amp;group_adults=2&amp;group_children=0&amp;b_h4u_keep_filters=&amp;from_sf=1">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>

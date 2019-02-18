@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/cordoba/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Cordoba</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Córdoba es una ciudad andaluza y municipio español. Situada en una depresión a
+orillas del río Guadalquivir . Es la tercera ciudad de Andalucía más poblada y más grande ,
+después de Sevilla y Málaga y la doceava de España.
+Córdoba conseguirá enamorarte en solo una tarde. Declarada Patrimonio de la Humanidad, es
+un legado vivo de las diversas culturas que se asentaron en ella a lo largo de su historia. Pocos
+lugares en el mundo pueden presumir de haber sido capital de la Hispania Ulterior bajo el
+Imperio romano y capital del Califato de los Omeyas. Además, se palpa en la intelectualidad
+de este centro de saber y conocimiento que ha dado a luz a figuras como Séneca, Averroes o
+Maimónides. Pasear por el casco antiguo cordobés supone descubrir un bello entramado de
+callejuelas, plazas y patios ordenados en torno a la Mezquita-Catedral.
+Otro factor que te puede enamorar es la gastronomía. La cocina cordobesa, típica de las tierras
+del interior, utiliza como materias primas los productos de la caza, de su cabaña ganadera y de
+la rica producción hortofrutícola de sus huertas.
+El aceite de oliva y los excelentes vinos de la campiña, son el complemento indispensable de
+esta suculenta gastronomía. El viajero puede probar las cazuelas de habas, los revueltos de
+espárragos, el cochifirto, la caldereta de cordero, las migas serranas y el estofado de rabo de
+toro, cuyo principal ingrediente procede del toro de lidia.
+El gazpacho, el flamenquín y el salmorejo son platos apetecibles típicos y que te harán repetir.
+La restauración cordobesa también ha incorporado a su gastronomía , recetas
+mozárabes como el cordero a la miel, plato digno de ser catado en cualquier época del año.</p>
+                <iframe src="https://www.youtube.com/embed/28bh6IL2INM" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/cordoba/mezquita.jpg" alt="">
+                        <div class="data2">
+                            <h2>Mezquita</h2>
+                            <p>DATA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/cordoba/alcazar.jpg" alt="">
+                        <div class="data2">
+                            <h2>Alcázar de los Reyes Cristianos.</h2>
+                            <p>El Alcázar de los Reyes Cristianos es una fortaleza y
+palacio de sólidos muros, dentro encierra gran parte de la evolución arquitectónica
+de Córdoba con restos romanos , visigodos y árabes. Fue lugar predilecto de los
+distintos gobernantes de la ciudad. Cuando en 1236 Córdoba es conquistada por
+Fernando III el Santo, el edificio, que formaba parte del antiguo Palacio Califal, estaba
+totalmente asolado. Alfonso X el Sabio comienza su restauración, completada durante
+el reinado de Alfonso XI. A lo largo de la Historia se le ha dado múltiples usos, como
+Sede del Santo Oficio o cárcel.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/cordoba/caballerizas.jpg" alt="">
+                        <div class="data2">
+                            <h2>Caballerías reales</h2>
+                            <p>Las Caballerizas Reales  se crearon en el siglo XVIII mandado a
+construir por Felipe II, que tenía una gran afición por los caballos y a su proyecto de
+crear para sí y para el mundo una de las mejores razas que ha dado la historia: El
+caballo Andaluz .Lo que en un principio fue un simple deseo real, terminó siendo uno
+de los más grandes y queridos proyectos de Felipe II. El pura raza español era muy
+apreciado para montar y llegó a convertirse en un claro símbolo del imperio español.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/cordoba/baños califales.jpg" alt="">
+                        <div class="data2">
+                            <h2>Baños Califales</h2>
+                            <p>Los Baños Califales fueron mandados construir en el siglo X por el
+califa Al-Hakam II y formaron parte del Alcázar Califal de Córdoba.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<p>Si quieres informacion acerca de hoteles pulsa <a href="https://www.booking.com/city/es/cordoba.es.html?aid=303946;label=cordoba-sfrr3DJ3ks17CPvvafepKAS223259204862:pl:ta:p1190:p2%E2%82%AC10:ac:ap1t1:neg:fi:tiaud-285284109966:kwd-4866648863:lp9049140:li:dec:dm;ws=&amp;gclid=Cj0KCQiA-onjBRDSARIsAEZXcKbT-dD3er069TKidv6YE4q1FhDpHBRG4kTILGDqT85m9G3pIkQFgbAaAvO5EALw_wcB">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>
