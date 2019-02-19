@@ -36,13 +36,15 @@
 
 .informacion p {
     margin: 10;
+    font-size: 20px;
+    
 }
 
 .informacion iframe {
     width: 560px;
     height: 315px;
     border: 1px solid #000;
-	margin: 30px 0;
+	margin: 60px 0;
 }
 
 /*SLIDER*/
@@ -80,9 +82,13 @@
     margin: 10px;
 }
 
+.slider .data_slider .data2 h2 {
+    font-size: 25px;
+}
+
 .slider .data_slider .data2 p {
 	text-align: justify;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 .slider .boton_izquierda {
@@ -103,6 +109,10 @@
 
 /*HOTEL*/
 
+.hoteles {
+    margin-top: 60px;
+}
+
 .info_hotel {
     background: #eee;
 }
@@ -118,6 +128,14 @@
     text-align: center;
     width: 50%;
     height: auto;
+}
+
+.info_hotel .info .data h2 {
+    font-size: 25px;
+}
+
+.info_hotel .info .data p {
+    font-size: 23px;
 }
 
 .info_hotel .info .img {
