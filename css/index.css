@@ -41,15 +41,11 @@
     text-align: center;
 }
 
-.paises .portada .buscador input{
-    padding: 10px;
+.paises .portada .categorias{
+    margin: 10px 0;
 }
 
-.paises .portada .buscador button{
-    padding: 10px;
-}
-
-
+/*CATEGORIASSSSSSS*/
 
 .lista {
     display: flex;
@@ -63,6 +59,7 @@
     height: 250px;
     margin: 10px;
     border-radius: 10px;
+    display: inline-block;
 }
 
 .pais .data {
@@ -81,4 +78,8 @@
     margin-top: 10px;
     font-size: 30;
     color: #000;
+}
+
+.mal {
+    background: red;
 }

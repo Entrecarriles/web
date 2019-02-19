@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/toulouse/fondo.jpg" alt="">
+                <div class="data">
+                    <h1 style="color: white;">Toulouse</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Toulouse es una ciudad francesa que siempre destacó por su interés cultural,
+famoso por sus academias de Ballet, y por rebosar arte por todos lados, es un destino que
+recoge puntos turísticos para todos los gustos, desde los amantes de la Edad Media hasta la
+aficionados de la ingeniería aeroespacial, con el museo de Aviación y la sede de la empresa
+Airbus. Por esto y más, Toulouse es a mi parecer un lugar único perfecto para visitar en
+diversas ocasiones.</p>
+                <iframe src="https://www.youtube.com/embed/q5vTBohw9ns" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/toulouse/monument.jpg" alt="">
+                        <div class="data2">
+                            <h2>Monument aux Combattants</h2>
+                            <p>:Este monumento está en el centro de un boulevard. Vale la pena parar a mirar alrededor, ya que tiene una bonita escultura en
+bajorrelieve, que representa los jefes de soldados de la Guerra Mundial I . El arco fue inaugurado en 1928. Este maravilloso monumento está cerca del parque por la
+noche, la iluminación lo hace incluso más destacado. Una verdadera belleza de monumento.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/toulouse/basilique.png" alt="">
+                        <div class="data2">
+                            <h2>Basilica Saint-Sernin</h2>
+                            <p>Uno de los importantes edificios religiosos es esta preciosa basílica románica que destaca entre los tolosanos por ser más representativa
+incluso que la propia Catedral de St. Ettiene. Está situada al norte del centro histórico y es una de las iglesias románicas más grandes del sur de Francia. Su
+construcción data de finales del siglo XI y principios del XII.Sencillamente majestuoso. Es la catedral, para mi gusto, más hermosa de Toulouse. Ojalá tengan la
+oportunidad de asistir a una ceremonia religiosa para deleitarse con el espectacular órgano y su sin igual acústica.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/toulouse/place.jpg" alt="">
+                        <div class="data2">
+                            <h2>Plaza del capitorio</h2>
+                            <p>Destaca por ser una gran explanada abierta entre las callejuelas pequeñas del centro histórico y por albergar el edificio del Ayuntamiento de la
+ciudad.
+Es el centro de la vida de la ciudad y de cualquier evento o celebración multitudinaria que se celebre. En ella están también algunos de los cafés y terrazas más
+clásicos de la ciudad.
+El Capitole es el edificio que da nombre a la plaza y el más representativo de la misma. Alberga a la vez la sede del Ayuntamiento de la ciudad y el Teatro del
+Capitole, uno de los clásicos de Toulouse.
+Cuenta también, en la fachada situada justo frente al Ayuntamiento, con unos soportales en los que el pintor Raymond Moretti realizó una serie de pinturas en el
+techo representando diferentes momentos o particularidades de la historia de Toulouse.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>Ibis budget Toulouse Centre</h2>
+                                <p>El ibis budget Toulouse Centre se encuentra en el centro de Toulouse, a 8 km del aeropuerto de Toulouse Blagnac y a 6 km del estadio de Toulouse y ofrece
+recepción 24 horas, conexión WiFi gratuita, aparcamiento gratuito y habitaciones insonorizadas.
+Las habitaciones del ibis budget Toulouse Centre disponen de armario, TV de pantalla plana, aire acondicionado y baño privado con aseo y ducha.</p>
+                                <br>
+                                <a href="https://www.booking.com/hotel/fr/ibis-budget-toulouse-centre.es.html?aid=303946;label=Toulouse-OMgKLkMQ43APnIWeyTAzUQS88191839663%3Apl%3Ata%3Ap1260%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-794696213%3Alp1005421%3Ali%3Adec%3Adm;sid=83a4dd923dd01736173709e5dc8aa813;dest_id=-1473166;dest_type=city;dist=0;group_adults=2;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1550604448;srpvid=e1e288d0826201d2;type=total;ucfs=1&#hotelTmpl">Información</a>
+                            </div>
+                            <div class="img">
+						        <img src="img/toulouse/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=303946;label=Toulouse-OMgKLkMQ43APnIWeyTAzUQS88191839663%3Apl%3Ata%3Ap1260%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-794696213%3Alp1005421%3Ali%3Adec%3Adm;sid=3a042f753c5285fe8fccb256acc6a48d;dest_id=-1473166;dest_type=city;srpvid=e1e288d0826201d2;ss=Toulouse&">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>

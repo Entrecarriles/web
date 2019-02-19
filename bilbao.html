@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/bilbao/fondo.jpg" alt="">
+                <div class="data">
+                    <h1 style="color: white;">Bilbao</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Bilbao atrapa al visitante. Con numerosas plazas y lugares de interés, ciudad donde se
+mezcla lo antiguo y lo moderno, Bilbao, y todo el país vasco es un lugar que debemos
+conocer. Impresiona la limpieza de la ciudad, de sus plazas, como la de Federico
+Moyua, de su arquitectura en el museo Guggenheim o el Puente Zubizuri, o su gran
+gastronomía como los pinchos, tapas y platos, en toda la ciudad. Bilbao, donde el mar
+cumple un importante papel dentro de la capital vasca.</p>
+                <iframe src="https://www.youtube.com/embed/Fg753PC0cf8" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/bilbao/museo.jpg" alt="">
+                        <div class="data2">
+                            <h2>Museo Guggenheim</h2>
+                            <p>El Guggenheim obra de Frank Gehry. Durante los cinco años que duró su construcción,
+el arquitecto nacido en Toronto hablaba abiertamente de su “obra maestra”, a pesar de
+que ya tenía el Premio Pritzker (1989). Fue esa audacia -y el convencimiento de sus
+clientes. El Guggenheim hace de Bilbao una urbe cosmopolita.Daría lugar a su
+reconversión de ciudad industrial a destino artístico-gastronómico</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/bilbao/casco%20viejo.jpg" alt="">
+                        <div class="data2">
+                            <h2>Casco viejo</h2>
+                            <p>Muy típico, sus calles, comercios, bares, las calles del Casco Viejo de Bilbao
+posee montones de locales con las mejores tapas del mundo y a precios razonables este
+antiguo núcleo medieval es un animado barrio a la orilla de la ría con estrechas calles
+llenas de tiendas modernas y tabernas tradicionales, Pais Vasco en estado puro.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/bilbao/catedral.jpg" alt="">
+                        <div class="data2">
+                            <h2>Catedral de Santiago de Bilbao</h2>
+                            <p>La Iglesia Catedral de Bilbao está consagrada al Apóstol
+Santiago, patrón oficial de la Villa desde 1643. Construida en el siglo XV, es de estilo
+gótico, aunque su torre y su fachada son de estilo neogótico. Muy bonita, en pleno
+centro histórico de Bilbao, para la mayoría de personas les ha merecido la pena verla,
+muy recomendable para los amantes de la historia.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>Sercotel Coliseo</h2>
+                                <p>El Sercotel Coliseo ocupa el antiguo teatro de la ópera de Bilbao y
+ofrece WiFi gratuita, gimnasio y un casino. El establecimiento goza de una ubicación
+céntrica, a 5 minutos a pie de la estación de metro Abando y de la estación de tren de
+Bilbao.</p>
+                            </div>
+                            <div class="img">
+						        <img src="img/bilbao/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=303946&amp;label=bilbao-GXvcw2c9pUcmNzs6HeqtLgS90309686063%3Apl%3Ata%3Ap190%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-285284109726%3Akwd-1018971432%3Alp9049140%3Ali%3Adec%3Adm&amp;sid=a6a7c0fdf1419729c5dc46ed1e1fd5f8&amp;sb=1&amp;src=city&amp;src_elem=sb&amp;error_url=https%3A%2F%2Fwww.booking.com%2Fcity%2Fes%2Fbilbao.es.html%3Faid%3D303946%3Blabel%3Dbilbao-GXvcw2c9pUcmNzs6HeqtLgS90309686063%253Apl%253Ata%253Ap190%253Ap2%253Aac%253Aap1t1%253Aneg%253Afi%253Atiaud-285284109726%253Akwd-1018971432%253Alp9049140%253Ali%253Adec%253Adm%3Bsid%3Da6a7c0fdf1419729c5dc46ed1e1fd5f8%3Binac%3D0%26%3B&amp;ss=Bilbao&amp;is_ski_area=0&amp;ssne=Bilbao&amp;ssne_untouched=Bilbao&amp;city=-373608&amp;checkin_monthday=&amp;checkin_month=&amp;checkin_year=&amp;checkout_monthday=&amp;checkout_month=&amp;checkout_year=&amp;no_rooms=1&amp;group_adults=2&amp;group_children=0&amp;b_h4u_keep_filters=&amp;from_sf=1">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>
