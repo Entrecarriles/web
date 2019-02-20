@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/madrid/fondo.png" alt="">
+                <div class="data">
+                    <h1>Madrid</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Madrid es la capital de España y conocida habitualmente como Villa y Corte,
+Madrid es la mayor ciudad del país y la segunda de la Unión Europea con una población de
+más de 3 millones de habitantes  En Madrid podemos encontrar de todo, palacios, museos ,
+parques temáticos ,plazas , parques…</p>
+                <iframe src="https://www.youtube.com/embed/m1hTUJB8wM0" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/madrid/palacio.jpg" alt="">
+                        <div class="data2">
+                            <h2>Palacio Real</h2>
+                            <p>DATA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/madrid/museo.jpg" alt="">
+                        <div class="data2">
+                            <h2>Museo del Prado</h2>
+                            <p>El Museo del Prado es un precioso antiguo castillo con más de mil obras
+maravillosas basadas en la antigua Colección Real. Es una de las galerías más importantes de
+arte del mundo y las más de 7.000 pinturas en su colección ofrecen una visión detallada de la
+célebre historia del arte español. El Prado ofrece entrada gratuita entre las 18:00 y 20:00 los
+
+días laborales y de 17:00 a 19:00 los domingos y
+festivos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/madrid/parque.jpg" alt="">
+                        <div class="data2">
+                            <h2>Parque Warner</h2>
+                            <p>Uno de los parques temáticos más famosos de Madrid es la Warner. 
+Aquí podrás disfrutar en familia pero sobre todo con los más pequeños. Podrás disfrutar de
+los protagonistas de Warner como Piolín o Bugs Bunny así como personajes de DC
+Comics como Batman o Superman.
+Además de la presencia de los diferentes dibujos animados, el parque cuenta con
+innumerables atracciones para todos los públicos.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>CoolRooms Atocha</h2>
+                                <p>La ubicación
+perfecta, cerca de todo. El hotel precioso, habitación espectacular. Estancia muy
+agradable. Desayuno muy completo.</p>
+                                <br>
+                                <a href="https://www.booking.com/searchresults.es.html?aid=352053;label=msn-NKYLhKrCSec92BfQBwskDg-80539240131683%3Atikwd-16027870938%3Aloc-170%3Aneo%3Amte%3Adec%3Aqshoteles%20en%20madrid;sid=57f86cc41cd0d41e072ba69b60b1c4ac;city=-390625;expand_sb=1;highlighted_hotels=3572901;hlrd=no_dates;keep_landing=1;redirected=1;source=hotel;srpvid=74ff95e6ca1f000b&">Información</a>
+                            </div>
+                            <div class="img">
+						        <img src="img/madrid/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/city/es/madrid.es.html?aid=352053&amp;label=msn-NKYLhKrCSec92BfQBwskDg-80539240131683:tikwd-16027870938:loc-170:neo:mte:dec:qshoteles%20en%20madrid&amp;utm_campaign=Spain&amp;utm_medium=cpc&amp;utm_source=bing&amp;utm_term=NKYLhKrCSec92BfQBwskDg&amp;msclkid=c098c91191521559514b957de3d428bd">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>
