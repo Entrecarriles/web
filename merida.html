@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/merida/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Mérida</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Mérida es un municipio y ciudad de España, capital de la comunidad autónoma
+de Extremadura. Está situada al norte de la provincia de Badajoz. Su término municipal, uno de
+los más extensos del país, cuenta con una población de 59.352 habitantes.</p>
+                <iframe src="https://www.youtube.com/embed/W9xsruP3ji0" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/merida/puente.jpg" alt="">
+                        <div class="data2">
+                            <h2>Puente Romano</h2>
+                            <p>Es la obra arquitectónica más importante de Mérida. Se considera como el puente más antiguo
+de la antigüedad. Por él han pasado muchas culturas y han ocurrido varias guerras .El puente
+está al lado de la Alcazaba.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/merida/anfiteatro.JPG" alt="">
+                        <div class="data2">
+                            <h2>Anfiteatro de Mérida</h2>
+                            <p>El anfiteatro de Mérida es un antiguo recinto para espectáculos de luchas de gladiadores que
+fue construido por el Imperio romano en la colonia de Augusta Emerita, a finales del siglo I a.
+C.. Su construcción se realizó junto a la del famoso teatro romano, con el que formaban la
+
+gran área pública de espectáculos de la capital de la Lusitania. Fue abandonado hacia el siglo IV
+d. C. y hasta principios del siglo XX permaneció parcialmente enterrado.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/merida/loba.JPG" alt="">
+                        <div class="data2">
+                            <h2>Loba Capitolina</h2>
+                            <p>Esta estatua está formada por Luperca ( la loba ) que según la mitología amamantó a Rómulo y
+Remo cuando estos fueron mandados a matar por el rey Amulio. Y por Rómulo y Remo .
+Actualmente la estatua dedicada a ella,es llamada &quot;la loba capitolina.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>Hotel Ilunion Mérida Palace</h2>
+                                <p>Este palacio restaurado del siglo XV está en la plaza España y ofrece una terraza en la azotea
+con piscina pequeña de temporada y vistas a la ciudad. El Hotel Mérida Palace se encuentra a
+200 metros del templo romano de Diana.</p>
+                                <br>
+                                <a href="https://www.booking.com/hotel/es/meliameridaboutiquehotel.es.html?aid=352053;label=msn-Tc6GhBWhy3CdF9XDevh0eA-80607985781096%3Atikwd-16027868983%3Aloc-170%3Aneo%3Amte%3Adec%3Aqshoteles%20en%20merida;sid=5d08286c1430ad09801c45c5727b9da1;dest_id=-391934;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1550682377;srpvid=c40278421dce0032;type=total;ucfs=1&amp;">Información</a>
+                            </div>
+                            <div class="img">
+						        <img src="img/merida/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=352053;label=msn-Tc6GhBWhy3CdF9XDevh0eA-80607985781096%3Atikwd-16027868983%3Aloc-170%3Aneo%3Amte%3Adec%3Aqshoteles%20en%20merida;sid=604fcad8d63bcbf4447f82e68dbd9bac;dest_id=-391934;dest_type=city;srpvid=c40278421dce0032;ss=M%C3%A9rida&">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>

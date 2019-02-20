@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/caceres/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Cáceres</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Se trata de una ciudad española ubicada en Extremadura. A su vez es la capital de
+la provincia de Extremadura. Se puede denominar como el municipio más grande y más
+poblado de la provincia con alrededor de 100000 habitantes. Además se considera como el
+municipio más extenso de toda España con una superficie de 1750 km^2.
+La ciudad vieja de Cáceres se declaró Patrimonio de la Humanidad por la Unesco en el año
+1986 por tener uno de los conjuntos urbanos más completos de la Edad Media y del
+Renacimiento con edificios como la Concatedral de Santa María, el Palacio de las Veletas y la
+Casa del Sol entre muchos otros.</p>
+                <iframe src="https://www.youtube.com/embed/E4XNNxskFj4" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/caceres/arco.jpg" alt="">
+                        <div class="data2">
+                            <h2>Arco de la estrella</h2>
+                            <p>El Arco de la Estrella, entrada tradicional a la Ciudad Monumental de Cáceres, vino a sustituir a
+la Puerta Nueva construcción del siglo XV. Une la Plaza Mayor con la Plaza de Santa María
+ambas centros neurálgicos de la ciudad durante siglos.
+De estilo barroco, fue construido por Manuel de Larra Churriguera en el siglo XVIII sobre una
+construcción del siglo XV,
+
+Se ubica a la entrada del casco antiguo de Cáceres concretamente en la zona del muro.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/caceres/torre.jpg" alt="">
+                        <div class="data2">
+                            <h2>Torre de Bujaco</h2>
+                            <p>Es una construcción de orígen árabe y levantada sobre sillares romanos. Se encuentra dentro
+del cerco defensivo de ciudad monumental de Cáceres. Tiene 25 metros de altura y planta
+cuadrada. Tiene rematada por una ringla de almenas, dos matacanes laterales y uno frontal,
+que se añadió en el siglo XVIII. En la cara occidental, orientado hacia la Plaza Mayor, se
+encuentra el pequeño balcón de los Fueros, del siglo XVI.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/caceres/plaza.jpg" alt="">
+                        <div class="data2">
+                            <h2>Plaza de San Jorge</h2>
+                            <p>Se puede encontrar en el centro de la zona amurallada de Cáceres. La plaza de San Jorge,
+patrón de la ciudad, es un rincón maravilloso en el que desconectar durante la visita a
+´Cáceres. En ella hay un restaurante-terraza, museos, un jardín con una fuente, de Cristina
+Ulloa, donde el tiempo se detiene.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>Atrio Restaurante Hotel</h2>
+                                <p>Este hotel se ubica a 200 metros de la Catedral de Cáceres disponiendo de
+una piscina estacional, conexión Wi-Fi gratuita y un restaurante con 2 estrellas michelín.
+Las habitaciones tienen aire acondicionado, insonorizadas y climatizadas, teniendo a su
+vez un minibar, caja fuerte y televisión. El cuarto de baño dispone de diversos utensilios a
+su disposición.</p>
+                                <br>
+                                <a href="https://www.booking.com/hotel/es/atrio-restaurante.es.html?aid=352056;label=msn-GcxdVqNft6hI3jdCITc0DA-80882865733624%3Atikwd-138064051009%3Aloc-170%3Aneo%3Amte%3Adec%3Aqscaceres;sid=5d08286c1430ad09801c45c5727b9da1;dest_id=-374847;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1550683081;srpvid=29db79a4b54f0083;type=total;ucfs=1&amp;">Información</a>
+                            </div>
+                            <div class="img">
+						        <img src="img/caceres/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=352056;label=msn-GcxdVqNft6hI3jdCITc0DA-80882865733624%3Atikwd-138064051009%3Aloc-170%3Aneo%3Amte%3Adec%3Aqscaceres;sid=604fcad8d63bcbf4447f82e68dbd9bac;dest_id=-374847;dest_type=city;srpvid=29db79a4b54f0083;ss=C%C3%A1ceres&">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>
