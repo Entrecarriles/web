@@ -98,3 +98,27 @@
 .mal {
     background: red;
 }
+
+/*------------------PRECIO------------------*/
+
+.precio {
+    margin: 60px 1%;
+    width: 100%;
+    color: #000;
+}
+
+.precio .titulo {
+    text-align: center;
+}
+
+.precio .informacion {
+    margin: 20px;
+}
+
+.precio .tabla, .th, .td {
+    color: #000;
+    margin-left: 10vw;
+    border: 1px solid #000;
+    padding: 0 10px;
+    text-align: center;
+}

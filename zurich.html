@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="acerca%20de.html">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/zurich/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Zurich</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Ciudad de increíble con personas con gran personalidad, comida deliciosa y una impresionante.hermosa
+naturaleza de hospitalidad,el centro de Zurich, el lago y principalmente la vieja ciudad se han convertido en un
+local muy concurrido y atracción turística con muchas pequeñas tiendas, restaurantes y cafes con buen ambiente.</p>
+                <iframe src="https://www.youtube.com/embed/Va5FKhbWuHw" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/zurich/fraumunster.jpg" alt="">
+                        <div class="data2">
+                            <h2>Iglesia Fraumunster</h2>
+                            <p>Es una famosa Iglesia, donde se guarda el pasado católico de la ciudad.La Iglesia de Nuestra Señora en
+español, es uno de los monumentos más reconocibles y fotografiados de la ciudad de Zurich. Tienen un interior gótico y
+románico y los vitrales del artista Marc Chagall. Lo primero que uno ve al acercarse es la famosa torre del reloj de color
+azul. Por dentro, la nave es de estilo gótico y el órgano es el más grande de la ciudad- El coro es de estilo románico. Los
+vitrales de Giacometti son dignos de observar. La Iglesia está ubicada junto a la Plaza Munsterhof, en la orilla izquierda
+del río Limmat.
+El tour es bastante flexible, es increible la posibilidad de sentir a través de las vidrieras su historia, es una experiencia
+única.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/zurich/museo.jpg" alt="">
+                        <div class="data2">
+                            <h2>Museo Nacional de Suiza</h2>
+                            <p>Este es un museo sobre Suiza y su historia, con muchas presentaciones
+interactivas, lo que lo hace más atractivo. Su imponente la construcción, enamora a los amantes de la
+historia, y en el interior del museo pueden verse objetos de la historia de Suiza desde la prehistoria,
+pasando por la revolucion industrial, hasta nuestros dias, un destino que seguro entreteniene al menos
+puesto en dicha materia.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>Hotel City Zürich Design & Lifestyle</h2>
+                                <p>El Hotel City Zürich se encuentra en pleno centro de Zúrich, al lado de la legendaria Bahnhofstrasse y del distrito financiero y comercial. Hay WiFi gratuita.</p>
+                                <br>
+                                <a href="https://www.booking.com/hotel/ch/city-zurich.es.html?aid=376371;label=es-JCB2UqznXtCO_RDP_nj5CAS267778198072%3Apl%3Ata%3Ap1%3Ap22%2C156%2C000%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-297601667035%3Akwd-65526620%3Alp9047036%3Ali%3Adec%3Adm;sid=604fcad8d63bcbf4447f82e68dbd9bac;dest_id=296;dest_type=district;dist=0;group_adults=2;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1550703392;srpvid=1956a150b2c300b1;type=total;ucfs=1&#hotelTmpl">Información</a>
+                            </div>
+                            <div class="img">
+						        <img src="img/zurich/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=376371&label=es-JCB2UqznXtCO_RDP_nj5CAS267778198072%3Apl%3Ata%3Ap1%3Ap22%2C156%2C000%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-297601667035%3Akwd-65526620%3Alp9047036%3Ali%3Adec%3Adm&sid=604fcad8d63bcbf4447f82e68dbd9bac&sb=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.es.html%3Faid%3D376371%3Blabel%3Des-JCB2UqznXtCO_RDP_nj5CAS267778198072%253Apl%253Ata%253Ap1%253Ap22%252C156%252C000%253Aac%253Aap1t1%253Aneg%253Afi%253Atiaud-297601667035%253Akwd-65526620%253Alp9047036%253Ali%253Adec%253Adm%3Bsid%3D604fcad8d63bcbf4447f82e68dbd9bac%3Bsb_price_type%3Dtotal%26%3B&ss=1.+Centro+hist%C3%B3rico+-+Centro+de+Z%C3%BArich%2C+Z%C3%BArich%2C+Cant%C3%B3n+de+Z%C3%BArich%2C+Suiza&is_ski_area=&checkin_year=&checkin_month=&checkout_year=&checkout_month=&no_rooms=1&group_adults=2&group_children=0&map=1&b_h4u_keep_filters=&from_sf=1&ss_raw=zurich&ac_position=1&ac_langcode=es&ac_click_type=b&dest_id=296&dest_type=district&place_id_lat=47.3738464474128&place_id_lon=8.54213965776106&search_pageview_id=1219a10a60750030&search_selected=true&search_pageview_id=1219a10a60750030&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0#map_closed">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>
