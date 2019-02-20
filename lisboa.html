@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="acerca%20de.html">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/lisboa/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Lisboa</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Lisboa es la capital​ y mayor ciudad de Portugal. Situada en la desembocadura del
+río Tajo. Los expertos recomiendan tres días para visitar Lisboa.  Durante estos tres días tendrá
+tiempo para visitar todas las atracciones turísticas más importantes, vivir su magnífica vida
+nocturna, saborear la gastronomía regional y marcharse con unos recuerdos especiales de esta
+ciudad extraordinaria.</p>
+                <iframe src="https://www.youtube.com/embed/NCU64a5Y4Po" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/lisboa/monasterio.jpeg" alt="">
+                        <div class="data2">
+                            <h2>Monasterio de los Jerónimos de Belém</h2>
+                            <p>Ha sido declarado Patrimonio de la humanidad en 1983.
+Constituye unos de los principales ejemplos de la arquitectura manuelina en Portugal y un
+homenaje a la época dorada de los descubrimientos, pues Manuel I ordenó su construcción
+para conmemorar el regreso de la India de Vasco de Gama. De hecho, las obras se financiaron
+con los impuestos procedentes de las colonias.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/lisboa/puente.jpg" alt="">
+                        <div class="data2">
+                            <h2>Puente 25 de Abril</h2>
+                            <p>El puente 25 de Abril es un gran puente colgante de Portugal que atraviesa el río Tajo, en el
+área metropolitana de Lisboa. Se encuentra cerca del cristo de Lisboa. Diseñado en su día
+como puente Salazar, por haber sido mandado construir por el jefe del Gobierno de Portugal,
+António de Oliveira Salazar en 1960.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/lisboa/monumento.jpg" alt="">
+                        <div class="data2">
+                            <h2>El Monumento a los Descubrimientos</h2>
+                            <p>El Monumento a los Descubrimientos, conocido como Padrão dos Descobrimentos. Fue
+construido en 1960, en la margen del río Tajo, en Belém, Lisboa, para conmemorar los 500
+años de la muerte de Enrique el Navegante.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>Ibis Styles Lisboa Centro Marquês de Pombal</h2>
+                                <p>El ibis Styles
+Lisboa Marquês De Pombal está situado junto al parque Eduardo VII ( muy cerca del
+centro y del metro ) y ofrece habitaciones confortables con una decoración
+contemporánea. Se proporciona WiFi gratuita, aparcamiento y servicio de lavandería. El
+hotel se reformó en diciembre de 2018.</p>
+                                <br>
+                                <a href="https://www.booking.com/hotel/pt/hoteleduardovii.es.html?aid=303946&amp;label=lisbon-FuaFxRplQKKoCv3F6GWQVgS154562157808%3Apl%3Ata%3Ap12760%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-285284110006%3Akwd-2453359883%3Alp9049140%3Ali%3Adec%3Adm&amp;sid=336c903cd21c7fa550b618e972657b97&amp;ucfs=1&amp;srpvid=594545eac9ad020d&amp;srepoch=1550570196&amp;hpos=2&amp;hapos=2&amp;dest_id=-2167973&amp;dest_type=city&amp;sr_order=popularity&amp;from=searchresults;highlight_room=">Información</a>
+                            </div>
+                            <div class="img">
+						        <img src="img/lisboa/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=303946&label=lisbon-FuaFxRplQKKoCv3F6GWQVgS154562157808%3Apl%3Ata%3Ap12760%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-285284110006%3Akwd-2453359883%3Alp9049140%3Ali%3Adec%3Adm&sid=604fcad8d63bcbf4447f82e68dbd9bac&sb=1&src=tourism_city&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Ftourism%2Fcity%2Fpt%2Flisbon.es.html%3Faid%3D303946%3Blabel%3Dlisbon-FuaFxRplQKKoCv3F6GWQVgS154562157808%253Apl%253Ata%253Ap12760%253Ap2%253Aac%253Aap1t1%253Aneg%253Afi%253Atiaud-285284110006%253Akwd-2453359883%253Alp9049140%253Ali%253Adec%253Adm%3Bsid%3D604fcad8d63bcbf4447f82e68dbd9bac%3Bsrpvid%3D594545eac9ad020d%26%3B&ss=Lisboa&is_ski_area=0&ssne=Lisboa&ssne_untouched=Lisboa&city=-2167973&checkin_year=&checkin_month=&checkout_year=&checkout_month=&no_rooms=1&group_adults=2&group_children=0&b_h4u_keep_filters=&from_sf=1">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>
