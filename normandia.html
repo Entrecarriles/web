@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/normandia/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Normandía</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Es muy recomendable si se van a ver las playas del desembarco para conocer mejor lo que sucedió, porqué y las consecuencias. Te da un buen
+panorama que te ayuda a entender qué es lo que lleva a desencadenar la Segunda Guerra Mundial Educativo, realista, bien recreado, un lugar único ,
+imprescindible, para la gente que le preocupa vivir en este mundo y sobre todo entender que dejamos atrás y como comprender mejor la forma de afrontar el futuro.</p>
+                <iframe src="" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/normandia/bird%20hill.jpg" alt="">
+                        <div class="data2">
+                            <h2>La colline aux Oiseaux</h2>
+                            <p>Bird Hill Park es un lugar de relajación y recreación para sus 380,000 visitantes anuales. También invita a descubrir con el jardín
+de rosas, el etiquetado de plantas, la granja normanda, el laberinto o la casa positiva ... Se proponen animaciones sobre los temas de jardinería y
+educación ambiental. En la cima de la colina hay bonitas vistas de la ciudad de Caen al sureste, al menos en invierno. Quizás en el verano el follaje reduciría la
+visibilidad. En el lado este de la cima de la colina, nos sorprendió encontrar un gran zoológico de mascotas, con cabras, ovejas, cerdos, pollos y creo que un burro.
+Increíble. Más al oeste, hay un enorme jardín de rosas y un laberinto. Solo puedo imaginar lo hermoso que sería el jardín de rosas cuando está en plena
+florecimiento.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/normandia/gros-horloge.jpg" alt="">
+                        <div class="data2">
+                            <h2>Gros- Horloge</h2>
+                            <p>En pleno centro de la parte antigua no os podéis perder este reloj y el detalle del arco que lo soporta.De día es muy bonito y de noche se ilumina
+perfectamente el arco que de día pasa más desapercibido.Junto al arco hay bares terrazas que te cautivaras como nunca antes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/normandia/cementerio.jpg" alt="">
+                        <div class="data2">
+                            <h2>El Cementerio Estadounidense de Normandía</h2>
+                            <p>Es un cementerio y memorial de la Segunda Guerra Mundial, en Colleville-sur-Mer, Francia, que honra a los soldados
+estadounidenses muertos en Europa durante dicha guerra.
+Ademas son cementerios como el alemán, el canadiense o el británico de Bayeux podrían considerarse joyas ocultas en las que se respira tranquilidad y uno puede
+reflexionar sobre el caos que produce la guerra en la raza humana.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>Au detour de GournayL</h2>
+                                <p>El Au detour de Gournay está situado en Gournay-en-Bray, a 31 km de Beauvais, y dispone de terraza y WiFi gratuita.
+Todos los alojamientos cuentan con zona de estar y cocina totalmente equipada con varios utensilios de cocina, como horno, microondas y tostadora. Hay nevera,
+cafetera y hervidor de agua.</p>
+                                <br>
+                                <a href="https://www.booking.com/searchresults.es.html?aid=324799;label=normandie-kG6bLJK3RmNZHeyQ%2AJ9ZDQS234956073069%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-285284110006%3Akwd-444038253%3Alp1005421%3Ali%3Adec%3Adm;sid=c46b60e7a8dd2d625c57634e64c84690;city=-1429861;expand_sb=1;highlighted_hotels=2385574;hlrd=no_dates;keep_landing=1;redirected=1;source=hotel;srpvid=01b6941e89c00202&#hotelTmpl">Información</a>
+                            </div>
+                            <div class="img">
+						        <img src="img/normandia/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=324799&label=normandie-kG6bLJK3RmNZHeyQ*J9ZDQS234956073069%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-285284110006%3Akwd-444038253%3Alp1005421%3Ali%3Adec%3Adm&sid=83a4dd923dd01736173709e5dc8aa813&sb=1&src=region&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fregion%2Ffr%2Fnormandie.es.html%3Faid%3D324799%3Blabel%3Dnormandie-kG6bLJK3RmNZHeyQ%252AJ9ZDQS234956073069%253Apl%253Ata%253Ap1%253Ap2%253Aac%253Aap1t1%253Aneg%253Afi%253Atiaud-285284110006%253Akwd-444038253%253Alp1005421%253Ali%253Adec%253Adm%3Bsid%3D83a4dd923dd01736173709e5dc8aa813%3Binac%3D0%26%3B&ss=Normand%C3%ADa&is_ski_area=0&ssne=Normand%C3%ADa&ssne_untouched=Normand%C3%ADa&region=808&checkin_monthday=&checkin_month=&checkin_year=&checkout_monthday=&checkout_month=&checkout_year=&no_rooms=1&group_adults=2&group_children=0&b_h4u_keep_filters=&from_sf=1">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>

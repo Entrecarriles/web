@@ -43,6 +43,19 @@
 
 .paises .portada .categorias{
     margin: 10px 0;
+    display: inline-block;
+}
+
+.paises .portada .categorias .categoria {
+    background: #ddd;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.paises .portada .categorias .select {
+    background: #999;
 }
 
 /*CATEGORIASSSSSSS*/

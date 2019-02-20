@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/berna/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Berna</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>DESCRIPCION</p>
+                <iframe src="" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/berna/torre.jpg" alt="">
+                        <div class="data2">
+                            <h2>Zytgloggenturm</h2>
+                            <p>La Zytgloggeturm fue construida por la ciudad-estado de Berna cuando se levantó. Su construcción empezó en 1191 y fue finalizada en 1256. Con la evolución de la ciudad, la torre fue quedando más y más al centro. Por un tiempo fue utilizada como prisión para mujeres hasta el gran incendio de 1405. A su lado este se encuentra un lindo reloj con dibujos de osos, y todavía más alto, un caballero en armadura completa.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/berna/palacio.jpg" alt="">
+                        <div class="data2">
+                            <h2>Palacio Federal</h2>
+                            <p>El Palacio Federal de Suiza es un edificio institucional de Suiza que alberga la sede del gobierno (Consejo Federal) y de la Asamblea Federal (Consejo Nacional de Suiza y del Consejo de los Estados) y se sitúa en la plaza Federal de Berna.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/berna/atraccion.jpg" alt="">
+                        <div class="data2">
+                            <h2>Bärengraben</h2>
+                            <p>Bärengraben y BärenPark se administran como una parte geográficamente discreta del zoológico Dählhölzli de la ciudad . El Bärengraben es un sitio de patrimonio suizo de importancia nacional , y tiene un significado particular en Berna porque el oso es un símbolo tanto de la ciudad como del cantón circundante , y aparece en su escudo de armas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/berna/atraccion.jpg" alt="">
+                        <div class="data2">
+                            <h2>Catedral de Berna</h2>
+                            <p>La Catedral de Berna en la ciudad de Berna es el edificio religioso más alto de Suiza con una torre de 100,6 metros. De estilo gótico, se comenzó a construir en 1421, pero no se terminó hasta el 1893. El patrono de la catedral es San Vicente de Zaragoza, mártir del siglo IV.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>Beauvilla Bern</h2>
+                                <p>El Beauvilla Bern es una villa histórica de 1902, situada en el barrio de las embajadas de Berna, a 10 minutos a pie del casco antiguo. Cuenta con la decoración antigua original, un jardín con tumbonas, sauna y sala de fitness. Hay conexión Wi-Fi gratuita en todo el establecimiento.</p>
+                                <br>
+                                <a href="https://www.booking.com/hotel/ch/beauvilla-bern.es.html?aid=303946;label=Bern-7xIIquaHBvMkkqoOz0sJ0wS255658141668%3Apl%3Ata%3Ap160%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-261710242702%3Akwd-2274964913%3Alp9049140%3Ali%3Adec%3Adm;sid=7dbafde3884fa05dd9dea80bacf3e11d;dest_id=-2551235;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1550679098;srpvid=b26271dc718b001f;type=total;ucfs=1&#hotelTmpl">Información</a>
+                            </div>
+                            <div class="img">
+						        <img src="img/berna/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=303946&label=Bern-7xIIquaHBvMkkqoOz0sJ0wS255658141668%3Apl%3Ata%3Ap160%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-261710242702%3Akwd-2274964913%3Alp9049140%3Ali%3Adec%3Adm&sid=336c903cd21c7fa550b618e972657b97&sb=1&src=city&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fcity%2Fch%2FBern.es.html%3Faid%3D303946%3Blabel%3DBern-7xIIquaHBvMkkqoOz0sJ0wS255658141668%253Apl%253Ata%253Ap160%253Ap2%253Aac%253Aap1t1%253Aneg%253Afi%253Atiaud-261710242702%253Akwd-2274964913%253Alp9049140%253Ali%253Adec%253Adm%3Bsid%3D336c903cd21c7fa550b618e972657b97%3Binac%3D0%26%3B&ssne=Berna&ssne_untouched=Berna&city=-2551235&checkin_monthday=&checkin_month=&checkin_year=&checkout_monthday=&checkout_month=&checkout_year=&no_rooms=1&group_adults=2&group_children=0&from_sf=1">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>

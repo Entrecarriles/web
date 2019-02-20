@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/milan/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Milán</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Milán, una de las capitales mundiales de la moda, ofrece infinitas oportunidades para hacer las compras más elegantes. Pásate por el creativo vecindario de Brera para comprar mercancía de cuero excelente y por Via Monte Napoleone, donde encontrarás las boutiques más caras y exclusivas.La Galería de Vittorio Emanuele II que te dejaran sin aliento. ¿Te gusta lo que oyes? Pues pasate por este post y mira lo que te ofrecemos.</p>
+                <iframe src="https://youtube/embed/08hN-mp0ZIk" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/milan/catedral.jpg" alt="">
+                        <div class="data2">
+                            <h2>Duomo (catedral)</h2>
+                            <p>Imponente, grande, hermoso. Para se compra una entrada a 3 euros de unos 100 mts, de la puerta de acceso, con esta entrada se puede ingresar a la planta baja, habiendo otros precios para otros sectores. Dejando atrás el tema religioso, merece la pena ver de lo que es capaz el ser humano.Muy
+recomendable el visitar tal maravilla arquitectonica.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/milan/galeria.jpg" alt="">
+                        <div class="data2">
+                            <h2>Galeria de Vittorio Emanuele II</h2>
+                            <p>En la Galleria Vittorio Emanuele II se pueden encontrar, además de agradables restaurantes con terraza, las tiendas más elegantes de la ciudad. El edificio, construido entre 1865 y 1877, está formado por dos arcadas perpendiculares cubiertas por una bóveda de vidrio y hierro. esta galería es un lugar precioso, hermoso y fascinante con una arquitectura impresionante. Hay tiendas de diseñadores de alta costura, restaurantes, tiendas de
+departamento, farmacias, hoteles esta frente a la plaza del Duomo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/milan/castello.jpg" alt="">
+                        <div class="data2">
+                            <h2>Castello Sforzesco</h2>
+                            <p>Precioso castillo rodeado de interesantes museos, uno de los más importantes es el que alberga la Pietá Rondanini de Miguel Ángel. El castillo
+conecta con el Parque Simpione este es un castillo de un aspecto imponente. Un bastion que te hace pensar en la magnitud de Milan en aquella epoca con un patio
+central grandioso.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>Melzo 24</h2>
+                                <p>El Melzo 24 ofrece alojamiento con WiFi gratuita en Milán, a solo 1,3 km de la Galería de Arte Moderno. Este apartamento se encuentra a 1,4 km de Villa Necchi Campiglio y a 2,4 km de La Scala.
+
+Este apartamento cuenta con sala de estar y cocina totalmente equipada con microondas. Hay TV.
+
+El distrito de la moda de Milán se encuentra a 2,5 km del apartamento. El aeropuerto de Milán Linate está a 7 km.</p>
+                                <br>
+                                <a href="https://www.booking.com/hotel/it/melzo-24.es.html?aid=303946;label=milan- 8ID8Snfs42hsMUyo2WR3RwS247131523128%3Apl%3Ata%3Ap11960%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-85317449633%3Akwd- 2225863013%3Alp1005421%3Ali%3Adec%3Adm;sid=83a4dd923dd01736173709e5dc8aa813;dest_id=-121726;dest_type=city;dist=0;group_adults=2;hapos=8;hpos=8;room1=A%2CA;sb_price_type=total;sr_order=price;srepoch=1550607000;srpvid=d8168dcc457c009f;type=total;ucfs=1&#hotelTmpl">Información</a>
+                            </div>
+                            <div class="img">
+						        <img src="img/milan/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=303946&label=milan- 8ID8Snfs42hsMUyo2WR3RwS247131523128%3Apl%3Ata%3Ap11960%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atiaud-85317449633%3Akwd- 2225863013%3Alp1005421%3Ali%3Adec%3Adm&sid=83a4dd923dd01736173709e5dc8aa813&sb=1&src=city&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Fcity%2Fit%2Fmilan.es.html%3Faid%3D303946%3Blabel%3Dmilan- 8ID8Snfs42hsMUyo2WR3RwS247131523128%253Apl%253Ata%253Ap11960%253Ap2%253Aac%253Aap1t1%253Aneg%253Afi%253Atiaud- 85317449633%253Akwd- 2225863013%253Alp1005421%253Ali%253Adec%253Adm%3Bsid%3D83a4dd923dd01736173709e5dc8aa813%3Binac%3D0%26%3B&ss=Mil%C3%A1n&is_ski_area=0&ssne=Mil%C3%A1n&ssne_untouched=Mil%C3%A1n&city=-121726&checkin_monthday=&checkin_month=&checkin_year=&checkout_monthday=&checkout_month=&checkout_year=&no_rooms=1&group_adults=2&group_children=0&b_h4u_keep_filters=&from_sf=1">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>

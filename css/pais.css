@@ -80,6 +80,8 @@
 	width: 60%;
     transform: translateX(-10%);
     margin: 10px;
+    height: 250px;
+    overflow-y: auto;
 }
 
 .slider .data_slider .data2 h2 {
@@ -128,6 +130,7 @@
     text-align: center;
     width: 50%;
     height: auto;
+    overflow-y: auto;
 }
 
 .info_hotel .info .data h2 {

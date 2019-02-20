@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/icons.css">
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/cate.js"></script>
     </head>
     <body>
         <header>
@@ -29,85 +32,105 @@
             </div>
             
             <!--PAISES-->
-            <div class="paises">
+            <div class="paises" id="paises">
                 <div class="portada">
                     <h1>Paises</h1>
                     <div class="categorias">
-						
+						<a href="#paises" class="categoria" category="all">Todos</a>
+						<a href="#paises" class="categoria" category="España">España</a>
+						<a href="#paises" class="categoria" category="Francia">Francia</a>
+				        <a href="#paises" class="categoria" category="Italia">Italia</a>
+                        <a href="#paises" class="categoria" category="Suiza">Suiza</a>
                     </div>
                 </div>
                 
                 <div class="lista">
                    
                    <!--MARSELLA-->
-                    <div class="pais mal">
-                        <div class="data" id="pais">
+                    <div class="pais mal" category="Francia">
+                        <div class="data">
                             <img src="img/marsella/fondo.jpg" alt="">
                             <a href="pais.html" >Marsella</a>
                         </div>
                     </div>
                     
                     <!--BERNA-->
-                    <div class="pais mal">
-                        <div class="data" id="pais">
+                    <div class="pais mal" category="Suiza">
+                        <div class="data">
                             <img src="img/berna/fondo.jpg" alt="">
-                            <a href="" >Berna</a>
+                            <a href="berna.html" >Berna</a>
                         </div>
                     </div>
                     
                     <!--LYON-->
-                    <div class="pais">
-                        <div class="data" id="pais">
+                    <div class="pais" category="Francia">
+                        <div class="data">
                             <img src="img/lyon/fondo.jpg" alt="">
                             <a href="lyon.html" >Lyon</a>
                         </div>
                     </div>
                     
                     <!--TURIN-->
-					<div class="pais mal">
-                        <div class="data" id="pais">
+					<div class="pais mal" category="Italia">
+                        <div class="data">
                             <img src="img/turin/fondo.jpg" alt="">
                             <a href="turin.html" >Turín</a>
                         </div>
                     </div>
                     
                     <!--SANTIAGO DE COMPOSTELA-->
-					<div class="pais mal">
-                        <div class="data" id="pais">
+					<div class="pais mal" category="España">
+                        <div class="data">
                             <img src="img/santiago de compostela/fondo.jpg" alt="">
                             <a href="santiago de compostela.html" >Santiago de Compostela</a>
                         </div>
                     </div>
                     
                     <!--BARCELONA-->
-					<div class="pais">
-                        <div class="data" id="pais">
+					<div class="pais" category="España">
+                        <div class="data">
                             <img src="img/barcelona/fondo.jpg" alt="">
                             <a href="barcelona.html" >Barcelona</a>
                         </div>
                     </div>
                     
                     <!--CORDOBA-->
-					<div class="pais mal">
-                        <div class="data" id="pais">
+					<div class="pais mal" category="España">
+                        <div class="data">
                             <img src="img/cordoba/fondo.jpg" alt="">
                             <a href="cordoba.html" >Cordoba</a>
                         </div>
                     </div>
                     
                     <!--BILBAO-->
-					<div class="pais">
-                        <div class="data" id="pais">
+					<div class="pais" category="España">
+                        <div class="data">
                             <img src="img/bilbao/fondo.jpg" alt="">
                             <a href="bilbao.html" >Bilbao</a>
                         </div>
                     </div>
                     
                     <!--TOULOUSE-->
-					<div class="pais">
-                        <div class="data" id="pais">
+					<div class="pais" category="Francia">
+                        <div class="data">
                             <img src="img/toulouse/fondo.jpg" alt="">
                             <a href="toulouse.html" >Toulouse</a>
+                        </div>
+                    </div>
+                    
+                    <!--MILAN-->
+					<div class="pais" category="Italia">
+                        <div class="data">
+                            <img src="img/milan/fondo.jpg" alt="">
+                            <a href="milan.html" >Milán</a>
+                        </div>
+                    </div>
+                    
+                    <!--NORMANDIA-->
+					<div class="pais" category="Francia">
+                        <div class="data">
+                            <img src="img/normandia/fondo.jpg" alt="">
+                            <a href="normandia.html" >Normandía</a>
                         </div>
                     </div>
                 </div>
