@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Entrecarriles-Siempre viajando</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/icons.css">
+        <link rel="stylesheet" href="css/pais.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.jpg" alt="">
+            <h1>Entrecarriles</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Acerca de</a></li>
+            </ul>
+        </header>
+        
+        <div class="contenido">
+            
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/salamanca/fondo.jpg" alt="">
+                <div class="data">
+                    <h1>Salamanca</h1>
+                </div>
+            </div>
+            
+            <div class="informacion">
+                <p>Salamanca es una ciudad de España situada en la comunidad autónoma de
+Castilla y León. Presenta una rica cultura arquitectónica, religiosa y gastronómica. Muy famosa
+La Casa de las Conchas o en la Plaza Mayor del siglo XVIII. Las dos catedrales Nueva y Vieja de
+la ciudad son exponentes de los estilos renacentista y gótico.</p>
+                <iframe src="" frameborder="0" allowfullscreen></iframe>
+                
+				<h1>Monumentos:</h1>
+                <div class="slider">
+                    <div class="data_slider">
+                        <img src="img/salamanca/plaza.jpg" alt="">
+                        <div class="data2">
+                            <h2>Plaza mayor</h2>
+                            <p>Es un monumento muy importante de la ciudad. Tiene un estilo barroco y la
+expresión más significativa de esta inigualable villa tormesina.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/salamanca/catedrall.JPG" alt="">
+                        <div class="data2">
+                            <h2>Catedral nueva</h2>
+                            <p>Construida en la Catedral Vieja, se comenzó a construir en 1513 esta Catedral
+llamada popularmente “La Nueva”. El Cabildo Catedralicio de Salamanca fue su impulsor con
+la financiación de los Reyes Católicos Isabel y Fernando que por entonces estaban en su
+máximo poder religioso, cultural y político y España era un exponente en el Mundo.
+Las obras duraron 250 años.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="data_slider">
+                        <img src="img/salamanca/casa.jpg" alt="">
+                        <div class="data2">
+                            <h2>La casa de las conchas</h2>
+                            <p>La Real Clerecía o Colegio del Espíritu Santo, conocido
+popularmente como La Clerecía de Salamanca es una obra financiada por de los reyes Felipe III
+y Margarita de Austria, a principios del siglo XVII. Cuyo destino era formar seminaristas para
+extender la fe por todo el mundo.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="boton_izquierda" onclick="cambiar(-1)">&#10094;</button>
+                    <button class="boton_derecha" onclick="cambiar(+1)">&#10095;</button>
+                    <script>
+                    var Index = 1;
+                    mostrar(Index);
+                        
+                    function cambiar(n) {
+                        mostrar(Index += n);
+                    }
+                        
+                    function mostrar(n) {
+                        var i;
+                        var lis = document.getElementsByClassName("data_slider");
+                        if (n > lis.length) {
+                            Index = 1;
+                        }
+                        if (n < 1) {
+                            Index = lis.length;
+                        }
+                        for (i=0;i<lis.length;i++) {
+                            lis[i].style.display = "none";
+                        }
+                        lis[Index-1].style.display = "inline-block";
+                    }
+                    </script>
+                </div>
+				
+				<div class="hoteles">
+					<h1>Hoteles</h1>
+					<div class="info_hotel">
+						<div class="info">
+				            <div class="data">
+                                <h2>Hospes Palacio de San Esteban</h2>
+                                <p>Este hotel moderno y elegante ocupa un convento reformado y lleno de encanto
+atemporal, rodeado de los monumentos de la histórica Salamanca. Hay WiFi gratis en
+todas las instalaciones.</p>
+                                <br>
+                                <a href="https://www.booking.com/hotel/es/palaciodesanesteban.es.html?aid=352055;label=msn-TvPDzjCOrzpuK0Togl56ew-80539240585116%3Atikwd-16399340073%3Aloc-170%3Aneo%3Amte%3Adec%3Aqssalamanca%20hoteles;sid=57f86cc41cd0d41e072ba69b60b1c4ac;dest_id=-400105;dest_type=city;dist=0;hapos=1;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1550687060;srpvid=8164816995d500fa;type=total;ucfs=1&#hotelTmpl">Información</a>
+                            </div>
+                            <div class="img">
+						        <img src="img/salamanca/hotel.jpg" alt="">
+						    </div>
+						</div>
+					</div>
+					<p>Si quieres información acerca de más hoteles pulsa <a href="https://www.booking.com/searchresults.es.html?aid=352055;label=msn-TvPDzjCOrzpuK0Togl56ew-80539240585116%3Atikwd-16399340073%3Aloc-170%3Aneo%3Amte%3Adec%3Aqssalamanca%20hoteles;sid=57f86cc41cd0d41e072ba69b60b1c4ac;dest_id=-400105;dest_type=city;srpvid=f9b9736fa5b1013a;ss=Salamanca&">aqui</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="data">
+                <h4>Entrecarriles - Blog creado por Juangr4</h4>
+                <nav>
+                    <a class="icon-instagram" href="https://www.instagram.com/entrecarriles_aja/?hl=es"></a>
+                    <a class="icon-facebook-squared" href="https://www.facebook.com/entrecarriles.aja"></a>
+                    <a class="icon-twitter-squared" href="https://twitter.com/wordpressdotcom"></a>
+                </nav>
+            </div>
+        </footer>
+        
+    </body>
+</html>
