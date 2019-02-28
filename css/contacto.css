@@ -1,0 +1,53 @@
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner .contacto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+    color: #000;
+    
+    background: rgba(180,180,180,0.3);
+    padding: 5px;
+    border: 1px solid #000;
+    width: 40%
+}
+
+.contacto * {
+    margin: 1 0px;
+}
+
+.contacto h1 {
+    text-align: center;
+}
+
+.contacto h4{
+    text-align: justify;
+}
+
+.contacto input {
+    width: 100%;
+    color: #66f;
+    font-size: 15px;
+}
+
+.contacto textarea {
+    width: 100%;
+    max-width: 100%;
+    max-height: 150px;
+    color: #66f;
+    font-size: 15px;
+}
+
+.contacto input[type='submit'] {
+    padding: 5px;
+    display: block;
+}
